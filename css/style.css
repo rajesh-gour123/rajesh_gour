@@ -111,3 +111,35 @@
 .animate-carousel.paused {
   animation-play-state: paused;
 }
+
+
+
+*{
+  border: 3px solid red;
+}
+
+body{
+  /* border: 2px solid yellow  ; */
+}
+/* #about{
+  border: 2px solid rgb(245, 4, 4);
+} */
+
+/* .max3{
+  width: 80%;
+} */
+
+/* Using a Media Query for screens 600px and smaller */
+@media screen and (max-width: 600px) {
+  #custome_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .max3{
+    /* border: 1px solid green; */
+    width: 99%;
+  }
+}
