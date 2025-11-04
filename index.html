@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajesh Gour - Freelance Full Stack Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#14B8A6", secondary: "#0F172A" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-bg {
+      background-image: url('https://readdy.ai/api/search-image?query=modern%20software%20developer%20workspace%20with%20multiple%20monitors%20showing%20code%2C%20clean%20minimalist%20desk%20setup%20with%20laptop%2C%20coffee%20cup%2C%20notebooks%2C%20soft%20natural%20lighting%20from%20window%2C%20contemporary%20office%20environment%2C%20professional%20coding%20atmosphere%2C%20tech%20gadgets%20and%20tools%2C%20warm%20ambient%20lighting%2C%20clean%20white%20and%20blue%20color%20scheme&width=1920&height=1080&seq=hero001&orientation=landscape');
+    }
+
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Lenis JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+</head>
+
+<body class="scroll-smooth">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-secondary backdrop-blur-sm  border-[#F8FAFC] z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="font-bold text-xl text-gray-300">Rajesh Gour</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+          <a href="#about" class="text-gray-300 hover:text-primary transition-colors">About</a>
+          <a href="#services" class="text-gray-300 hover:text-primary transition-colors">Services</a>
+          <a href="#projects" class="text-gray-300 hover:text-primary transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+        </div>
+        <div class="hidden md:block">
+          <button id="hire-me-btn"
+            class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+            Hire Me
+          </button>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="w-6 h-6 flex items-center justify-center">
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#home" class="block text-gray-700 hover:text-primary transition-colors">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-primary transition-colors">About</a>
+        <a href="#services" class="block text-gray-700 hover:text-primary transition-colors">Services</a>
+        <a href="#projects" class="block text-gray-700 hover:text-primary transition-colors">Projects</a>
+        <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
+        <button
+          class="w-full bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+          Hire Me
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg bg-cover bg-center bg-no-repeat min-h-screen flex items-center relative">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+      <div class="max-w-2xl">
+        <h1 class="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight" id="hero_h1" data-aos="fade-right">
+          Rajesh Gour
+          <span class="block text-primary text-3xl sm:text-4xl font-medium" id="padd">Freelance Full Stack Web
+            & App Developer</span>
+        </h1>
+        <p class="text-xl text-white mb-8 leading-relaxed" data-aos="fade-left">
+          I help businesses build fast, secure, and scalable web applications
+          using the MERN stack. Transform your ideas into powerful digital
+          solutions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
+          <button
+            class="bg-primary text-white px-8 py-4 !rounded-button transition-colors text-lg font-medium whitespace-nowrap">
+            <a href="https://wa.me/916002883663?text=Hi%20Rajesh%2C%20I%20want%20to%20work%20with%20you" target="_blank"
+              rel="noopener noreferrer">
+              Hire Me Now
+            </a>
+
+          </button>
+          <button
+            class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-primary transition-colors text-lg font-medium whitespace-nowrap">
+            View Projects
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1" data-aos="fade-up"
+     data-aos-duration="3000">
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">About <span class="text-primary"> Me </span></h2>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            I'm a passionate full-stack developer with hands-on experience in
+            HTML, CSS, JavaScript, React.js, Node.js, Express, and MongoDB. I
+            specialize in building responsive, RESTful, and user-centric web
+            solutions.
+          </p>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            Whether you're a startup, agency, or entrepreneur. I can help you
+            bring your ideas to life with modern web technologies and best
+            practices.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-map-pin-line text-primary"></i>
+              </div>
+              <span class="text-gray-700">Hailakandi, Assam, India</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-calendar-line text-primary"></i>
+              </div>
+              <span class="text-gray-700">Active Since 2024</span>
+            </div>
+          </div>
+          <!-- .... -->
+          <div class="mt-8">
+  <h3 class="text-xl font-semibold text-gray-900 mb-4">
+    Key Technologies
+  </h3>
+  
+  <div class="flex border-b border-gray-200 mb-6">
+    <a
+      href="#"
+      data-tab="frontend"
+      class="tab-link active-tab text-primary border-b-2 border-primary py-2 px-4 text-sm font-medium transition-colors hover:text-primary/70 -mb-px"
+    >
+      Frontend
+    </a>
+    <a
+      href="#"
+      data-tab="backend"
+      class="tab-link text-gray-600 border-b-2 border-transparent py-2 px-4 text-sm font-medium transition-colors hover:text-primary/70 -mb-px"
+    >
+      Backend & Mobile
+    </a>
+    <a
+      href="#"
+      data-tab="database"
+      class="tab-link text-gray-600 border-b-2 border-transparent py-2 px-4 text-sm font-medium transition-colors hover:text-primary/70 -mb-px"
+    >
+      Database
+    </a>
+    <a
+  href="#"
+  data-tab="tools"
+  class="tab-link text-gray-600 border-b-2 border-transparent py-2 px-4 text-sm font-medium transition-colors hover:text-primary/70 -mb-px"
+>
+  Other Tools & Technologies
+</a>
+  </div>
+  
+  <div id="frontend" class="tab-content grid grid-cols-4 sm:grid-cols-6 gap-4">
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-html5-line text-orange-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">HTML5</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-css3-line text-blue-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">CSS3</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-javascript-line text-yellow-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">JavaScript</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-reactjs-line text-cyan-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">React</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-bootstrap-line text-purple-600 text-2xl mb-2"></i><span class="text-sm text-gray-600">Bootstrap</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-tailwind-css-line text-teal-400 text-2xl mb-2"></i><span class="text-sm text-gray-600">Tailwind</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-brush-line text-pink-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">SASS</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-code-s-slash-line text-green-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">jQuery</span></div>
+</div>
+
+
+  <div id="backend" class="tab-content hidden grid grid-cols-4 sm:grid-cols-6 gap-4">
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-nodejs-line text-green-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">Node.js</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-code-s-slash-line text-gray-600 text-2xl mb-2"></i><span class="text-sm text-gray-600">Express.js</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-smartphone-line text-blue-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">Kotlin</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-shield-keyhole-line text-orange-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">Joi Validation</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-lock-line text-red-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">JWT Auth</span></div>
+</div>
+
+
+  <div id="database" class="tab-content hidden grid grid-cols-4 sm:grid-cols-6 gap-4">
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-database-2-line text-blue-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">MySQL</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-database-line text-green-600 text-2xl mb-2"></i><span class="text-sm text-gray-600">MongoDB</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-database-2-fill text-gray-600 text-2xl mb-2"></i><span class="text-sm text-gray-600">SQL</span></div>
+</div>
+
+
+  <div id="tools" class="tab-content hidden grid grid-cols-4 sm:grid-cols-6 gap-4">
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-git-branch-line text-orange-600 text-2xl mb-2"></i><span class="text-sm text-gray-600">Git</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-github-line text-gray-800 text-2xl mb-2"></i><span class="text-sm text-gray-600">GitHub</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-terminal-line text-blue-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">VS Code</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-cloud-line text-sky-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">Render</span></div>
+  <div class="bg-white p-3 rounded-lg shadow-sm text-center"><i class="ri-global-line text-green-500 text-2xl mb-2"></i><span class="text-sm text-gray-600">Netlify</span></div>
+</div>
+
+</div>
+        </div>
+        <!-- ... -->
+        <div class="order-1 lg:order-2 flex justify-center">
+          <div class="relative" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+            <img src="./img/pic2.jpg"
+              alt="Rajesh Gour sitting at a modern desk, smiling confidently at the camera, wearing a casual shirt. The workspace features a laptop, coffee cup, and notepad, with soft natural light coming from a nearby window. The environment is clean, minimalist, and professional, conveying a welcoming and focused mood."
+              class="w-80 h-96 object-cover object-top rounded-2xl shadow-2xl" />
+            <div class="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-xl shadow-lg">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-code-line text-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">My Services</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          I offer comprehensive web development services to help your business
+          succeed online
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-code-s-slash-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Full Stack Web Development
+          </h3>
+          <p class="text-gray-600">
+            Complete end-to-end web application development using modern MERN
+            stack technologies.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-reactjs-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Frontend Design with React.js
+          </h3>
+          <p class="text-gray-600">
+            Modern, responsive user interfaces built with React.js and
+            contemporary design principles.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-server-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Backend APIs & Authentication
+          </h3>
+          <p class="text-gray-600">
+            Secure RESTful APIs with robust authentication and authorization
+            systems.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in-up">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-smartphone-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Responsive Website Design
+          </h3>
+          <p class="text-gray-600">
+            Mobile-first responsive designs that work perfectly across all
+            devices and screen sizes.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-database-2-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Database Setup & Management
+          </h3>
+          <p class="text-gray-600">
+            MongoDB and MySQL database design, optimization, and management
+            for your applications.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+            <i class="ri-tools-line text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">
+            Website Maintenance & Bug Fixing
+          </h3>
+          <p class="text-gray-600">
+            Ongoing support, maintenance, and quick bug fixes to keep your
+            website running smoothly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Here are some of my recent projects that showcase my skills and expertise
+        </p>
+      </div>
+
+      <div class="relative py-8 overflow-x-auto w-full">
+        <div id="project-carousel" class="flex flex-nowrap space-x-8 animate-carousel">
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="1">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20airbnb%20clone%20website%20interface%20showing%20property%20listings%2C%20clean%20booking%20platform%20design%2C%20vacation%20rental%20app%20mockup%2C%20contemporary%20web%20application%20screenshot%2C%20property%20search%20and%20booking%20features%2C%20professional%20web%20development%20project&width=400&height=250&seq=project001&orientation=landscape"
+              alt="Wanderlust Project" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Wanderlust (Airbnb Clone)</h3>
+              <p class="text-gray-600 mb-4">Full-featured vacation rental platform with user authentication, property
+                listings, and booking system.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MongoDB</span>
+              </div>
+              <div class="flex gap-3"><a href="https://wanderlust-7y7v.onrender.com/listings" target="_blank"
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap text-center">View
+                  Live</a></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="2">
+            <img
+              src="https://readdy.ai/api/search-image?query=country%20information%20search%20application%20interface%2C%20world%20map%20with%20country%20data%2C%20geographic%20information%20system%20web%20app%2C%20country%20statistics%20and%20details%20display%2C%20modern%20data%20visualization%20dashboard%2C%20clean%20search%20interface%20design&width=400&height=250&seq=project002&orientation=landscape"
+              alt="Country Info Search" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Country Info Search</h3>
+              <p class="text-gray-600 mb-4">Real-time country information search application with interactive maps and
+                detailed statistics.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">REST API</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Axios</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="3">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20medical%20clinic%20website%20interface%2C%20doctor%20appointment%20booking%20system%2C%20healthcare%20web%20application%20design%2C%20medical%20professional%20website%20layout%2C%20patient%20portal%20interface%2C%20clean%20medical%20web%20design&width=400&height=250&seq=project003&orientation=landscape"
+              alt="Doctor Clinic Website" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Doctor Clinic Website</h3>
+              <p class="text-gray-600 mb-4">Professional medical clinic website with appointment booking system and
+                patient management.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML5</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="4">
+            <img
+              src="https://readdy.ai/api/search-image?query=react%20native%20mobile%20task%20manager%20app%20screenshot%2C%20todo%20list%20application%20design%2C%20mobile%20user%20interface%20mockup%2C%20clean%20productive%20app%20design%2C%20ios%20android%20app%20development%20project&width=400&height=250&seq=project004&orientation=landscape"
+              alt="Mobile Task Manager" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Mobile Task Manager</h3>
+              <p class="text-gray-600 mb-4">Cross-platform mobile application for task management with offline
+                capability and state management.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React Native</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Redux</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Demo</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="5">
+            <img
+              src="https://readdy.ai/api/search-image?query=full%20stack%20ecommerce%20website%20dashboard%20interface%2C%20online%20store%20checkout%20page%20design%2C%20mern%20stack%20e-commerce%20platform%20screenshot%2C%20product%20listing%20web%20application&width=400&height=250&seq=project005&orientation=landscape"
+              alt="MERN E-Commerce" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">MERN E-Commerce</h3>
+              <p class="text-gray-600 mb-4">A complete e-commerce platform with PayPal integration, product reviews, and
+                admin panel.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Express.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MongoDB</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="6">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20saas%20dashboard%20interface%2C%20analytics%20charts%20and%20data%20visualization%20web%20app%2C%20clean%20admin%20panel%20design%2C%20react%20charts%20project%20screenshot&width=400&height=250&seq=project006&orientation=landscape"
+              alt="SaaS Dashboard" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">SaaS Analytics Dashboard</h3>
+              <p class="text-gray-600 mb-4">Data-driven analytics dashboard for a fictional SaaS product with real-time
+                charting.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Recharts</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Demo</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="7">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20airbnb%20clone%20website%20interface%20showing%20property%20listings%2C%20clean%20booking%20platform%20design%2C%20vacation%20rental%20app%20mockup%2C%20contemporary%20web%20application%20screenshot%2C%20property%20search%20and%20booking%20features%2C%20professional%20web%20development%20project&width=400&height=250&seq=project001&orientation=landscape"
+              alt="Wanderlust Project" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Wanderlust (Airbnb Clone)</h3>
+              <p class="text-gray-600 mb-4">Full-featured vacation rental platform with user authentication, property
+                listings, and booking system.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MongoDB</span>
+              </div>
+              <div class="flex gap-3"><a href="https://wanderlust-7y7v.onrender.com/listings" target="_blank"
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap text-center">View
+                  Live</a></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="8">
+            <img
+              src="https://readdy.ai/api/search-image?query=country%20information%20search%20application%20interface%2C%20world%20map%20with%20country%20data%2C%20geographic%20information%20system%20web%20app%2C%20country%20statistics%20and%20details%20display%2C%20modern%20data%20visualization%20dashboard%2C%20clean%20search%20interface%20design&width=400&height=250&seq=project002&orientation=landscape"
+              alt="Country Info Search" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Country Info Search</h3>
+              <p class="text-gray-600 mb-4">Real-time country information search application with interactive maps and
+                detailed statistics.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">REST API</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Axios</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="9">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20medical%20clinic%20website%20interface%2C%20doctor%20appointment%20booking%20system%2C%20healthcare%20web%20application%20design%2C%20medical%20professional%20website%20layout%2C%20patient%20portal%20interface%2C%20clean%20medical%20web%20design&width=400&height=250&seq=project003&orientation=landscape"
+              alt="Doctor Clinic Website" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Doctor Clinic Website</h3>
+              <p class="text-gray-600 mb-4">Professional medical clinic website with appointment booking system and
+                patient management.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML5</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Bootstrap</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="10">
+            <img
+              src="https://readdy.ai/api/search-image?query=react%20native%20mobile%20task%20manager%20app%20screenshot%2C%20todo%20list%20application%20design%2C%20mobile%20user%20interface%20mockup%2C%20clean%20productive%20app%20design%2C%20ios%20android%20app%20development%20project&width=400&height=250&seq=project004&orientation=landscape"
+              alt="Mobile Task Manager" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Mobile Task Manager</h3>
+              <p class="text-gray-600 mb-4">Cross-platform mobile application for task management with offline
+                capability and state management.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React Native</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Node.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Redux</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Demo</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="11">
+            <img
+              src="https://readdy.ai/api/search-image?query=full%20stack%20ecommerce%20website%20dashboard%20interface%2C%20online%20store%20checkout%20page%20design%2C%20mern%20stack%20e-commerce%20platform%20screenshot%2C%20product%20listing%20web%20application&width=400&height=250&seq=project005&orientation=landscape"
+              alt="MERN E-Commerce" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">MERN E-Commerce</h3>
+              <p class="text-gray-600 mb-4">A complete e-commerce platform with PayPal integration, product reviews, and
+                admin panel.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Express.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">MongoDB</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Live</button></div>
+            </div>
+          </div>
+
+          <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0 w-80 md:w-96"
+            data-project-id="12">
+            <img
+              src="https://readdy.ai/api/search-image?query=modern%20saas%20dashboard%20interface%2C%20analytics%20charts%20and%20data%20visualization%20web%20app%2C%20clean%20admin%20panel%20design%2C%20react%20charts%20project%20screenshot&width=400&height=250&seq=project006&orientation=landscape"
+              alt="SaaS Dashboard" class="w-full h-48 object-cover object-top" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">SaaS Analytics Dashboard</h3>
+              <p class="text-gray-600 mb-4">Data-driven analytics dashboard for a fictional SaaS product with real-time
+                charting.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React.js</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Recharts</span>
+              </div>
+              <div class="flex gap-3"><button
+                  class="flex-1 bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors text-sm whitespace-nowrap">View
+                  Demo</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <!-- <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          What Clients Say
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Don't just take my word for it - here's what my clients have to say
+          about working with me
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6 italic">
+            "Rajesh delivered an exceptional e-commerce platform that exceeded
+            our expectations. His attention to detail and technical expertise
+            is outstanding."
+          </p>
+          <div class="flex items-center">
+            <img
+              src="https://readdy.ai/api/search-image?query=professional%20business%20woman%20headshot%2C%20confident%20female%20entrepreneur%2C%20modern%20business%20portrait%2C%20clean%20corporate%20background%2C%20friendly%20professional%20appearance&width=60&height=60&seq=client001&orientation=squarish"
+              alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover object-top mr-4" />
+            <div>
+              <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+              <p class="text-sm text-gray-600">CEO, TechStart Solutions</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6 italic">
+            "Working with Rajesh was a pleasure. He understood our
+            requirements perfectly and delivered a robust web application on
+            time and within budget."
+          </p>
+          <div class="flex items-center">
+            <img
+              src="https://readdy.ai/api/search-image?query=professional%20businessman%20headshot%2C%20middle%20aged%20male%20executive%2C%20confident%20business%20portrait%2C%20corporate%20professional%20appearance%2C%20clean%20modern%20background&width=60&height=60&seq=client002&orientation=squarish"
+              alt="Michael Chen" class="w-12 h-12 rounded-full object-cover object-top mr-4" />
+            <div>
+              <h4 class="font-semibold text-gray-900">Michael Chen</h4>
+              <p class="text-sm text-gray-600">
+                Founder, Digital Innovations
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6 italic">
+            "Rajesh's expertise in MERN stack development helped us launch our
+            startup successfully. His code quality and communication skills
+            are top-notch."
+          </p>
+          <div class="flex items-center">
+            <img
+              src="https://readdy.ai/api/search-image?query=young%20professional%20woman%20headshot%2C%20startup%20founder%20portrait%2C%20contemporary%20business%20professional%2C%20confident%20female%20entrepreneur%2C%20modern%20corporate%20background&width=60&height=60&seq=client003&orientation=squarish"
+              alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover object-top mr-4" />
+            <div>
+              <h4 class="font-semibold text-gray-900">Emily Rodriguez</h4>
+              <p class="text-sm text-gray-600">Co-founder, GrowthLab</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          Let's Work Together
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Ready to bring your project to life? Get in touch and let's discuss
+          how I can help you achieve your goals.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+        <div>
+          <form action="https://formsubmit.co/rajeshgour047@gmail.com" method="POST">
+
+    <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+        <input type="text" id="name" name="Name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your Name">
+    </div>
+
+    <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" id="email" name="_replyto" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="your@email.com">
+    </div>
+
+    <div class="mb-4">
+        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+        <input type="text" id="subject" name="_subject" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="The subject of your message">
+    </div>
+
+    <div class="mb-6">
+        <label for="remark" class="block text-gray-700 font-medium mb-2">Remark / Message</label>
+        <textarea id="remark" name="Remark" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your message here..."></textarea>
+    </div>
+
+    <input type="hidden" name="_next" value="https://rajeshgour.com/thank-you.html"> 
+    
+    <input type="hidden" name="_captcha" value="true"> 
+
+    <button type="submit" class="bg-primary text-white font-semibold px-6 py-3 rounded-button hover:bg-primary/90 transition-colors">
+        Send Message
+    </button>
+</form>
+        </div>
+        <div class="space-y-8"  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">
+              Get in Touch
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl">
+                  <i class="ri-mail-line text-primary text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Email</p>
+                  <p class="text-gray-600">ro7@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl">
+                  <i class="ri-phone-line text-primary text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Phone</p>
+                  <p class="text-gray-600">+91 60</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl">
+                  <i class="ri-linkedin-line text-primary text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">LinkedIn</p>
+                  <p class="text-gray-600">linkedin.com/in/gourrajesh</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-xl">
+                  <i class="ri-map-pin-line text-primary text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Location</p>
+                  <p class="text-gray-600">Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Follow Me
+            </h3>
+            <div class="flex gap-4">
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors">
+                <i class="ri-linkedin-fill text-xl"></i>
+              </a>
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors">
+                <i class="ri-github-fill text-xl"></i>
+              </a>
+              <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors">
+                <i class="ri-twitter-fill text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-12" data-aos="fade-up"
+     data-aos-duration="3000">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up"
+     data-aos-duration="3000">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Rajesh Gour</h3>
+          <p class="text-gray-400 mb-4">
+            Full Stack Web Developer specializing in MERN stack development.
+            Building modern, scalable web applications for businesses
+            worldwide.
+          </p>
+          <div class="flex gap-4">
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#38BDF8] transition-colors">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#38BDF8] transition-colors">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#38BDF8] transition-colors">
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+            </li>
+            <li>
+              <a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><span class="text-gray-400">Full Stack Development</span></li>
+            <li><span class="text-gray-400">React.js Development</span></li>
+            <li><span class="text-gray-400">API Development</span></li>
+            <li><span class="text-gray-400">Database Design</span></li>
+            <li><span class="text-gray-400">Website Maintenance</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">
+          © 2024 Rajesh Gour. All rights reserved. Built with passion and
+          modern web technologies.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script id="mobile-menu-toggle"></script>
+  <script id="smooth-scroll"></script>
+  <script id="form-handling"></script>
+  <script id="scroll-nav-border"></script>
+  <script src="./js/seript.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,   // animation length 1 second
+      once: false,      // animate every time element enters view
+      mirror: true      // animate again when scrolling up
+    });
+
+    const lenis1 = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      smoothTouch: false
+    });
+
+    function raf(time) {
+      lenis1.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+</body>
+
+</html>
