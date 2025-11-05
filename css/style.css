@@ -1,3 +1,28 @@
+
+/* Add this to your main CSS file (e.g., app.css, index.css, or style.css) */
+/*
+   Add this code to your main CSS file
+   (This is the most effective solution for aesthetic scrollbar removal)
+*/
+
+/* 1. For Webkit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 2. For IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* 3. For Firefox */
+body {
+    scrollbar-width: none;
+}
+
+
+
+
 /* Hiro Section */
 #hero_h1{
     line-height: 1.5;
@@ -139,10 +164,10 @@
 
 
 @media screen and (max-width: 409px) {
-  /* .max3{
-    border: 1px solid green;
-     width: 80%;
-  } */
+  #max3{
+    /* border: 1px solid green; */
+     width: 100%;
+  }
   #isFlex .i2y{
     padding-right: unset;
     padding-left: 0.5rem;
