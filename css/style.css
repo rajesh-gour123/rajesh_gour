@@ -1,25 +1,8 @@
-
-/* Add this to your main CSS file (e.g., app.css, index.css, or style.css) */
-/*
-   Add this code to your main CSS file
-   (This is the most effective solution for aesthetic scrollbar removal)
-*/
-
-/* 1. For Webkit browsers (Chrome, Safari, Edge) */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/* 2. For IE and Edge */
+/* FIX FOR MOBILE DESKTOP MODE FONT SCALING ISSUES */
 body {
-    -ms-overflow-style: none;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
-
-/* 3. For Firefox */
-body {
-    scrollbar-width: none;
-}
-
 
 
 
