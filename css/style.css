@@ -1,10 +1,3 @@
-/* FIX FOR MOBILE DESKTOP MODE FONT SCALING ISSUES */
-body {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-
 
 /* Hiro Section */
 #hero_h1{
@@ -148,7 +141,6 @@ body {
 
 @media screen and (max-width: 409px) {
   #max3{
-    /* border: 1px solid green; */
      width: 100%;
   }
   #isFlex .i2y{
