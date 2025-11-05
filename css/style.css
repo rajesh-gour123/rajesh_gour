@@ -8,92 +8,64 @@
     font-size: 1.9rem;
 }
 
+#light_border{
+    box-shadow: 0 0 1px 1px rgba(20, 184, 166, 0.4);
+    border: 1px solid rgba(20, 184, 166, 0.1);
+}
+
 #home::before {
-    /* Color: Black (0, 0, 0) | Opacity: 65% (0.65) */
     background: rgba(0, 0, 0, 0.65); 
-    /* The rest of your existing ::before properties should remain: */
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Ensure the overlay is above the image but below the text */
+    z-index: 1; 
 }
 
-/* * 2. Set the color of the main content text to white.
- * (You may need to adjust the selectors based on your HTML structure)
- */
-
-/* Example selector for your main name: Rajesh Gour */
-.hero-title h1, .hero-title strong { /* Use the correct selector for 'Rajesh Gour' */
-    color: #FFFFFF; /* Pure White */
-    font-weight: 700; /* Ensure it is bold */
+.hero-title h1, .hero-title strong { 
+    color: #FFFFFF; 
+    font-weight: 700; 
 }
 
-/* Example selector for your description text */
-.hero-description p { /* Use the correct selector for 'I help businesses build fast...' */
-    color: #F0F0F0; /* Off-white for slightly softer contrast */
-    z-index: 2; /* Ensure text is above the overlay */
+.hero-description p {
+    color: #F0F0F0; 
+    z-index: 2; 
     position: relative;
 }
 
-/*
- * 3. Primary Button: Hire Me Now (Solid Teal)
- */
+
 .btn-primary { 
-    background-color: #14B8A6; /* Your teal color */
+    background-color: #14B8A6; 
     color: #FFFFFF;
-    border: 2px solid #14B8A6; /* Match border to background */
+    border: 2px solid #14B8A6; 
     padding: 12px 28px;
-    border-radius: 8px; /* Slightly rounded corners */
+    border-radius: 8px; 
 }
 
-/*
- * 4. Secondary Button: View Projects (Clear White Outline)
- */
-.btn-secondary { /* Use the correct class for 'View Projects' */
+
+.btn-secondary { 
     background-color: transparent;
-    color: #FFFFFF; /* White text */
-    border: 2px solid #FFFFFF; /* White border */
+    color: #FFFFFF; 
+    border: 2px solid #FFFFFF; 
     padding: 12px 28px;
     border-radius: 8px;
-    margin-left: 15px; /* Space it away from the primary button */
+    margin-left: 15px;
 }
 
 
-
-
-
-
-/* -------------------------------------------------------------------------- */
-/* 1. AUTO-SCROLL ANIMATION DEFINITION                                        */
-/* -------------------------------------------------------------------------- */
-
-/* Define the movement for the seamless loop */
 @keyframes carousel-scroll {
-  /* Start at 0% translation */
   from {
     transform: translateX(0);
   }
-  /* End at -50% to scroll exactly past the first set of 6 duplicated cards */
   to {
     transform: translateX(-50%);
   }
 }
-
-/* Define the new Tailwind utility class (assuming you are using Tailwind utilities) */
-/* If you are using Tailwind via CDN, you should add this to a custom style block */
 .animate-carousel {
-  /* 60s is the speed (adjust lower for faster, higher for slower) */
-  animation: carousel-scroll 30s linear infinite;
+  animation: carousel-scroll 10s linear infinite;
 }
-
-/* -------------------------------------------------------------------------- */
-/* 2. HIDE THE CAROUSEL SCROLLBAR (Keeps manual scroll function but hides bar)*/
-/* -------------------------------------------------------------------------- */
-
-/* Target the scrolling wrapper */
 .overflow-x-auto.w-full {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -103,21 +75,11 @@
     display: none;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/* 3. JS PAUSE FEATURE CSS (MUST be added for the script in Step 3 to work)   */
-/* -------------------------------------------------------------------------- */
-
-/* When the 'paused' class is added by JavaScript, stop the animation */
 .animate-carousel.paused {
   animation-play-state: paused;
 }
 
 
-
-/* *{
-  border: 3px solid red;
-} */
 
 #custome_flex {
     display: flex;
@@ -126,17 +88,7 @@
 #main{
   overflow-x: hidden;
 }
-/* .max3{
-  width: 80%;
-} */
 
-/* Using a Media Query for screens 600px and smaller */
- /* @media screen and (max-width: 600px) {
-  #custome_flex {
-    display: flex;
-    justify-content: space-between;
-  }
-} */
 
 
 @media screen and (max-width: 409px) {
@@ -147,8 +99,14 @@
     padding-right: unset;
     padding-left: 0.5rem;
   }
-  /* #isFlex{
-    border: 1px solid purple;
-  } */
+  #hero_h1{
+    font-size: 2.8rem;
+  }
+  #hero_h1 span {
+    font-size: 1.6rem;
+}
+#pFor{
+  font-size: 1rem;
+}
 } 
 
