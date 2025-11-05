@@ -114,32 +114,41 @@
 
 
 
-*{
+/* *{
   border: 3px solid red;
-}
-
-body{
-  /* border: 2px solid yellow  ; */
-}
-/* #about{
-  border: 2px solid rgb(245, 4, 4);
 } */
 
+#custome_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+#main{
+  overflow-x: hidden;
+}
 /* .max3{
   width: 80%;
 } */
 
 /* Using a Media Query for screens 600px and smaller */
-@media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 600px) {
   #custome_flex {
     display: flex;
     justify-content: space-between;
   }
-}
+} */
+
 
 @media screen and (max-width: 409px) {
-  .max3{
-    /* border: 1px solid green; */
-    width: 99%;
+  /* .max3{
+    border: 1px solid green;
+     width: 80%;
+  } */
+  #isFlex .i2y{
+    padding-right: unset;
+    padding-left: 0.5rem;
   }
-}
+  /* #isFlex{
+    border: 1px solid purple;
+  } */
+} 
+
